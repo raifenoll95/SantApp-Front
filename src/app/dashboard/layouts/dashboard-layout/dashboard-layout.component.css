@@ -1,0 +1,274 @@
+/* Contenedor de la imagen */
+.image-container {
+  text-align: center; /* Centramos la imagen */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo de la imagen */
+.lights-image {
+  width: 70%; /* Hacemos que la imagen ocupe todo el ancho disponible */
+  max-width: 800px; /* Ancho máximo de la imagen (ajustable) */
+  height: auto; /* Mantenemos las proporciones de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+
+/* Fondo completo */
+.votacion-container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background: url('https://media.idownloadblog.com/wp-content/uploads/2018/12/Christmas-Tree-Black-_-White-iPhone-wallpaper-AR72014.png') repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilo del encabezado */
+.header {
+  text-align: center; /* Centramos todo el contenido */
+  padding: 10px 10px; /* Espaciado arriba y abajo */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Título principal */
+.title {
+  font-size: 1.2em; /* Tamaño moderado */
+  font-weight: 600; /* Peso de fuente medianamente fuerte */
+  color: #ffffff; /* Gris oscuro para un texto serio y profesional */
+  margin-bottom: 10px; /* Separación con el subtítulo */
+  letter-spacing: 1px; /* Espaciado de letras para darle amplitud */
+}
+
+/* Subtítulo con iconos */
+.subtitle {
+  font-size: 1.8em; /* Tamaño grande pero no exagerado */
+  color: #4CAF50; /* Verde navideño para mantener el espíritu de la Navidad */
+  margin-bottom: 20px;
+}
+
+/* Descripción adicional */
+.description {
+  font-size: 1.2em;
+  color: #cab8b8; /* Gris más claro para las descripciones */
+  margin: 8px 0;
+  line-height: 1.5; /* Mejor legibilidad */
+  font-family: 'Helvetica Neue', sans-serif; /* Fuente moderna y limpia */
+}
+
+/* Efectos sutiles para el título */
+.title:hover {
+  color: #4CAF50; /* Cambio de color sutil al pasar el ratón */
+  cursor: pointer; /* Indicamos que es interactivo */
+}
+
+/* Reajustar márgenes de los elementos */
+.header p, .header h1, .header h2 {
+  margin: 0; /* Eliminamos márgenes para un diseño más compacto */
+}
+
+
+
+
+/* Formulario */
+.votacion-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Equipos */
+.teams {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.teams button {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 15px;
+  cursor: pointer;
+  font-size: 1 em;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.teams button:hover {
+  background-color: #cc0000;
+  transform: scale(1.1);
+}
+
+.teams button.selected {
+  background-color: #28a745;
+  border: 2px solid #fff;
+}
+
+/* Botón de votar */
+.vote-button {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.5);
+}
+
+.vote-button:hover {
+  background-color: #ffaa00;
+  transform: scale(1.1);
+}
+
+.vote-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Mensaje de agradecimiento */
+.thank-you {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ffcc00;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+/* Pie de página */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1em;
+  color: #ffcc00;
+  z-index: 1;
+}
+
+/* Resultados de la votación */
+.results {
+  text-align: center;
+  margin-top: 1px;
+  width: 100%;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  width: 80%; /* Hace que el contenido sea más responsivo */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contenedor de la barra */
+.bar-container {
+  width: 60%; /* Asegura que las barras ocupen todo el espacio disponible */
+  height: 20px; /* Define la altura de las barras */
+  background-color: #e0e0e0; /* Fondo gris claro para el contenedor de la barra */
+  border-radius: 15px; /* Bordes redondeados para el contenedor */
+  margin: 10px 0; /* Espaciado entre las barras */
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra interna sutil */
+}
+
+/* Barra de progreso */
+.bar-container {
+  width: 100%;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+/* Barra para el equipo A */
+.barA {
+  height: 100%;
+  background-color: #4caf50; /* Verde para el equipo A */
+  border-radius: 12px 0 0 12px;
+}
+
+/* Barra para el equipo B */
+.barB {
+  height: 100%;
+  background-color: #2196f3; /* Azul para el equipo B */
+  border-radius: 12px 0 0 12px;
+}
+
+/* Aseguramos que las barras sean suaves con la animación */
+.bar {
+  transition: width 0.3s ease-in-out;
+}
+
+/* Título (nombre del equipo) */
+.botones {
+  font-size: 1.3 em;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-bottom: 8px;
+  letter-spacing: 1px; /* Espaciado sutil entre letras */
+  font-family: 'Dancing Script', cursive; /* Fuente navideña y elegante */
+}
+
+/* Estilo general de la información junto a las barras */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: #fff; /* Texto blanco para resaltar sobre fondo oscuro */
+  padding: 15px;
+  background: linear-gradient(135deg, #e74c3c, #c0392b); /* Degradado rojo cálido, navideño */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  margin-top: 10px;
+  text-align: center;
+  max-width: 100%; /* Ajustar en pantallas pequeñas */
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Título (nombre del equipo) */
+.info h3 {
+  font-size: 1.7em;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  margin-bottom: 8px;
+  letter-spacing: 1px; /* Espaciado sutil entre letras */
+  font-family: 'Dancing Script', cursive; /* Fuente navideña y elegante */
+}
+
+/* Estilo del porcentaje de votos */
+.info p {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Efecto de hover */
+.info:hover {
+  background: linear-gradient(135deg, #c0392b, #e74c3c); /* Color ligeramente más oscuro */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+

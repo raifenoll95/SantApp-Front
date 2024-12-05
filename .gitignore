@@ -6,6 +6,10 @@
 /out-tsc
 /bazel-out
 
+# APK
+/myApp
+/santApp
+
 # Node
 /node_modules
 npm-debug.log

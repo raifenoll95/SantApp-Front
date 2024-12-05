@@ -1,0 +1,102 @@
+/* Estilo general del contenedor */
+.container-login100 {
+  background: url('https://media.idownloadblog.com/wp-content/uploads/2018/12/Christmas-Tree-Black-_-White-iPhone-wallpaper-AR72014.png') repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh; /* Altura completa de la pantalla */
+  padding: 15px;
+}
+
+/* Estilo del contenedor interior */
+.wrap-login100 {
+  background-color: #ffffff; /* Fondo blanco para el formulario */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra ligera para profundidad */
+  padding: 65px 55px;
+  width: 100%;
+  max-width: 500px; /* Ajusta el ancho */
+  align-items: center;
+}
+
+/* Clase para el contenido interno del form (si es necesario) */
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+  background: url('https://media.idownloadblog.com/wp-content/uploads/2018/12/Christmas-Tree-Black-_-White-iPhone-wallpaper-AR72014.png') repeat;
+  align-items: center;
+}
+
+/* Contenedor del título y la imagen */
+.login100-form-title {
+  display: flex;
+  flex-direction: column; /* Esto coloca la imagen y el texto en líneas separadas */
+  align-items: center; /* Centra ambos elementos (imagen y texto) en el centro */
+  justify-content: center; /* Alineación en el eje vertical */
+  color: #4b6cb7; /* Puedes cambiar el color del texto si lo necesitas */
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* Estilo para las entradas del formulario */
+.input100 {
+  border: 1px solid #4b6cb7; /* Borde azul */
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 16px;
+  align-items: center;
+}
+
+/* Estilo para el botón de login */
+.login100-form-btn {
+  background-color: #6a5acd; /* Morado */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.login100-form-btn:hover {
+  background-color: #4b6cb7; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Fondo de la caja de entrada al enfocarse */
+.input100:focus {
+  outline: none;
+  border-color: #6a5acd; /* Morado al estar enfocado */
+}
+
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;   /* Organiza los elementos en columna (imagen arriba, login abajo) */
+  align-items: center;      /* Centra los elementos horizontalmente */
+  justify-content: center;  /* Centra los elementos verticalmente si el contenedor tiene altura */
+  height: 100vh;            /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  align-items: center;
+}
+
+/* Tamaño de la imagen */
+.christmas-hat {
+  width: 50px;  /* Ajusta el tamaño de la imagen */
+  height: 50px; /* Ajusta el tamaño de la imagen */
+  margin-bottom: 20px;  /* Añade espacio entre la imagen y el texto */
+  align-items: center;
+}
+
+
+
+
+
+

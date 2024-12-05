@@ -1,0 +1,63 @@
+<div class="votacion-container">
+
+  <!-- Imagen responsiva de luces -->
+  <div class="image-container">
+    <img src="assets/images/lights.png" alt="Luces navideñas" class="lights-image"/>
+  </div>
+
+  <div class="header">
+    <h1 class="title">¡Vota por tu equipo navideño favorito!</h1>
+    <h2 class="subtitle">🎄🎅</h2>
+    <p class="description">¡Tu voto cuenta!</p>
+  </div>
+
+  <form *ngIf="!haVotado" class="votacion-form">
+    <div class="teams">
+      <button type="button" (click)="seleccionarEquipo('A')" [class.selected]="equipoSeleccionado === 'A'">
+        <div class="botones">
+          Lily, Carlota, Hugo
+        </div>
+      </button>
+      <button type="button" (click)="seleccionarEquipo('B')" [class.selected]="equipoSeleccionado === 'B'">
+        <div class="botones">
+          Manu, Mº Antonia, Rai
+        </div>
+      </button>
+    </div>
+    <button [disabled]="!equipoSeleccionado" class="vote-button" (click)="votar($event)">
+      ¡Votar!
+    </button>
+  </form>
+
+  <div *ngIf="haVotado" class="thank-you">
+    <p>🎉 ¡Gracias por participar, <strong>{{ email }}</strong>!</p>
+    <p>Tu voto por el <strong>Equipo {{ equipoSeleccionado }}</strong> ha sido registrado.</p>
+  </div>
+
+  <!-- Resultados de la votación -->
+  <div *ngIf="haVotado" class="results">
+    <div class="result-item">
+      <div class="info">
+        <h3>Lily, Carlota, Hugo</h3>
+        <div class="bar-container">
+          <!-- Barra para el Equipo A -->
+          <div class="bar barA" [style.width.%]="percentageA" style="align-items: center;">{{ percentageA | number: '1.0-0' }}%</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-item">
+      <div class="info">
+        <h3>Manu, Mº Antonia, Rai</h3>
+        <div class="bar-container">
+          <!-- Barra para el Equipo B -->
+          <div class="bar barB" [style.width.%]="percentageB">{{ percentageB | number: '1.0-0' }}%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>🎅 ¡Felices fiestas! 🎁</p>
+  </footer>
+</div>
